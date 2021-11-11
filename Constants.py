@@ -1,6 +1,9 @@
-FILE_QUOTES = 'quotes-2020.json.bz2' 
-FILE_NEWSPAPER_TOKEN = "nps-tokens-2020.csv.bz2"
-FILE_SPEAKER_NEWSPAPER = "speaker-newspaper-2020.csv.bz2"
+DATA_FOLDER = "data/"
+PREPROCESSED_DATA_FOLDER = "preprocessed_data/"
 
-FILE_NEWSPAPER_SPEAKER_TFIDF = "newspaper_speaker_tfidf.npz"
-FILE_NEWSPAPER_TOKEN_TFIDF = "newspaper_token_tfidf.npz"
+FILE_QUOTES = DATA_FOLDER + 'quotes-2020.json.bz2' 
+FILE_NEWSPAPER_TOKEN = PREPROCESSED_DATA_FOLDER + "nps-tokens-2020.csv.bz2"
+FILE_SPEAKER_NEWSPAPER = PREPROCESSED_DATA_FOLDER + "speaker-newspaper-2020.csv.bz2"
+
+FILE_NEWSPAPER_SPEAKER_TFIDF = PREPROCESSED_DATA_FOLDER + "newspaper_speaker_tfidf.npz"
+FILE_NEWSPAPER_TOKEN_TFIDF = PREPROCESSED_DATA_FOLDER + "newspaper_token_tfidf.npz"
