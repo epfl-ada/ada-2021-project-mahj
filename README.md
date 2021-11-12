@@ -1,4 +1,4 @@
-## Title: The dictatorship of consortia on their owned media.
+# Title: The dictatorship of consortia on their owned media.
 
 ## Abstract
 One's view of the world is based on the information we have on it, and how it is conveyed.
@@ -107,4 +107,4 @@ and for dimensions <= 3 can be used to visualize clusters.
   * Data story?
   * Visualization
 
-## Questions for TAs **TODO: any questions left?*
+## Questions for TAs **TODO: any questions left?**
