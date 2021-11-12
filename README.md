@@ -67,7 +67,7 @@ To extract a topic associated to, for example, articles, we use [LSI](https://en
 
 
 
-## Proposed timeline **TODO: add 1 milestone?**
+## Proposed timeline **TODO: check points 1 and 2**
 * **25-nov-2021:** Data processing finished (i.e. decide on which data to drop, and implement remote processing if it is still too big for local algorithms (e.g. AWS))
 * **10-dec-2021:** Finish data analysis (i.e. **TODO ~all algorithms we were interested in have been run**)
 * **12-dec-2021:** Finish code cleaning and documentation.
