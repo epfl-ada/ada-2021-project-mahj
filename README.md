@@ -60,15 +60,19 @@ results, i.e. the clearest clustering. The methods we have selected are:
 * Use [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
 (*term frequency-inverse document frequency*) on the sets of words, or on speakers
 having spoken for a specific media, in order to give a bigger
-weight to more "significant" words or people. Then use PCA[^5] with cosine similarity
-as a distance metric to project these vectors in a smaller subspace, and finally run
-k-means (with euclidean distance[^6]) on the resulting vectors.
+weight to more "significant" words or people. 
+
+Then either use PCA[^5] to project these vectors in a smaller subspace along the axis with the larger variance.  
+Or [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexation*)
+which, applied on term-newspaper TF-IDF matrix, extracts the main topics. We thus obtain smaller dimension features representing the importance of a topic for a newspaper. This can be similary applied on the TF-IDF matrix of the speakers.
+
+Finally run k-means (with euclidean distance[^6]) on the resulting vectors. 
+
 * For each media, remember the set of citees, the distance measure is be
 the Jaccard similarity on these sets. We then run PCA[^5], and finally some clustering
 algorithm, e.g. DBSCAN on the media. Note that Jaccard similarity may be problematic in
 our case, because small sets (e.g. small media) cannot be similar to big sets.
-* **TODO: explain LSI.** [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexation*)
-which we will apply on the words to extract the most interesting "topics"
+* **TODO: explain LSI.** 
 
 [^5]: PCA reduces the computational complexity of further algorithms (e.g. k-means),
 and for dimensions <= 3 can be used to visualize clusters.
