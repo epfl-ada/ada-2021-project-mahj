@@ -84,7 +84,6 @@ which we will apply on the words to extract the most interesting "topics"
   |Newspaper_speaker_statistics.ipynb            | Some statistics and analysis on the speakers |
   |Preprocess_quotes.ipynb                       | Quote preprocessing, e.g. tokenization, formatting and lemmatization |
   |Preprocess_speakers.ipynb                     | Speakers preprocessing: see file for more details |
-  |Quotes_2020_loading.ipynb                     | Quotes loading: see file for more details |
 
 ## Proposed timeline
 * **17-nov-2021:** Media grouped by consortia.
