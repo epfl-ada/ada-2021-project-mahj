@@ -1,4 +1,4 @@
-## Title: Media groups (consortia?) clustering **TODO**
+## Title: The dictatorship of consortia on their owned media.
 
 ## Abstract **TODO: reread, but should be good**
 One's view of the world is based on the information we have on it, and how it is conveyed.
@@ -18,12 +18,10 @@ To answer that question, we will cluster journals according to different metrics
 aiming at evaluating the opinion they defend.
 
 ## Research questions
-* What are the best metrics to evaluate the opinions conveyed by a media.
- **(TODO really a research question, or just a method?)**
-* Does the orientation of a newspaper influence his choice of speaker?
- **(TODO: same question as above)**
-
 * Does the clustering of media enable us to detect the groups owning them?
+* What are the best metrics to identify the group they belong to?
+* Does the membership of a media to a consortium influence the choice of their speaker?
+
 
 
 ## Proposed additional datasets
@@ -52,8 +50,8 @@ In wikidata the media considered have an `owned by`
 attribute, which we can use, potentially recursively, to automate the consortium finding.
 To do that we will first have to either reparse the newspapers names  --which are for now
 all lower-case, all-attached-- to use them as input for the API, or to input them as-is
-in the wikidata search box, which seems to usually find the expected result.
-
+in the wikidata search box, which seems[^1] to usually find the expected result.
+[^1]: tested by hand on some inputs
 ##### Notebook organization: the most important files.
   **TODO:  Confirm notebook organization.**
 
@@ -70,13 +68,13 @@ in the wikidata search box, which seems to usually find the expected result.
 
 
 ## Proposed timeline **TODO: add 1 milestone?**
-* **25-11-2021:** Data processing finished (**TODO: expand on that, or we say its enough?**)
+* **25-nov-2021:** Data processing finished (**TODO: expand on that, or we say its enough?**)
 * **TODO: add intermediate milestone maybe not?**
-* **10-12-2021:** Finish data analysis (i.e. **TODO ~all algorithms we were interested in have been run**)
-* **12-12-2021:** Finish code cleaning and documentation.
-* **15-12-2021:** Finish writing up data story (+visualisation).
-* **16-12-2021:** Website is up and running, with the data story on it.
-* **17-12-2021:** Panic fixes.
+* **10-dec-2021:** Finish data analysis (i.e. **TODO ~all algorithms we were interested in have been run**)
+* **12-dec-2021:** Finish code cleaning and documentation.
+* **15-dec-2021:** Finish writing up data story (+visualization).
+* **16-dec-2021:** Website is up and running, with the data story on it.
+* **17-dec-2021:** Panic fixes.
 
 ## Organization within the team, to be refined individually at a later date. **TODO: more precise for A&J at least**
 * Antoine & Jonas
@@ -86,6 +84,6 @@ in the wikidata search box, which seems to usually find the expected result.
   * Data extraction / scraping (wikidata)
   * Code documentation
   * Data story?
-  * Visualisation
+  * Visualization
 
 ### Questions for TAs **TODO: any questions? Might make us seem better to have some**
