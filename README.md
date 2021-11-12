@@ -53,8 +53,7 @@ There are numerous features and similarity metrics to be chosen from.
 
 The features we study are based on our a priori analysis of
 which factors will be most useful in clustering the media, namely the speakers
-quoted by this media, and the words **TODO: "in the quotes", or "in the articles
-from which the quotes come"?**
+quoted by this media, and the words in the quote.
 
 We can then use different algorithms and similarity metrics to measure the distance
 between media. We will try several and choose the one giving the best
