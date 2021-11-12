@@ -64,7 +64,10 @@ weight to more "significant" words or people.
 Then either use PCA[^5] to project these vectors in a smaller subspace along the axis with the larger variance.  
 Or [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexation*)
 which, applied on term-newspaper TF-IDF matrix, extracts the main topics. We thus obtain smaller dimension features representing the importance of a topic for a newspaper. This can be similary applied on the TF-IDF matrix of the speakers.  
-Finally run k-means (with euclidean distance) on the resulting vectors.
+Finally run k-means (with euclidean distance) on the resulting vectors. For the choice of k
+we can start from the number of consortia, then decrease k from there. The reasoning
+is that there cannot be more than k clusters given our criteria, but there can still
+be some overlap between different consortia.
 
 * For each media, remember the set of citees, the distance measure is be
 the Jaccard similarity on these sets. We then run some clustering algorithms
