@@ -1,29 +1,29 @@
 ## Title: The dictatorship of consortia on their owned media.
 
-(https://www.allsides.com/media-bias/media-bias-ratings
-  https://newsteller.io/source
-  https://www.mediaobservatory.com
- https://www.youtube.com/watch?v=_fHfgU8oMSo)
+**TODO: add that:** https://newsteller.io/source
 
 ## Abstract
-One's view of the world is based on the information we have on it[^1], and how it is conveyed.
+One's view of the world is based on the information we have on it, and how it is conveyed.
 A big part of that information we obtain from the media, and in particular "traditional media"
 namely newspapers such as *The New York Times* or *Fox News*.
 As a result, the media have a huge impact on the public’s opinion.
 
-[^1]: Test footnote.
-
-
 One way to ensure you are well-informed (i.e. you are getting information on various topics) and are
-not biased towards a particular stance is to gather knowledge from several sources,
+not biased towards a particular stance[^1] is to gather knowledge from several sources,
 e.g. several media.
+
+[^1]: https://www.allsides.com/media-bias/media-bias-ratings
 
 But a lot of these media are owned by the same groups. This begs the question whether
 the information we are getting really is diverse, or if the news and opinions shared
-are roughly the same for media belonging to the same entity.
+are roughly the same for media belonging to the same entity.[^2]
 
-To answer that question, we will cluster journals according to different metrics
-aiming at evaluating the opinion they defend.
+[^2]: https://www.youtube.com/watch?v=_fHfgU8oMSo
+
+To answer that question, we will try to cluster journals according to different metrics
+aiming at evaluating the opinion they defend. This [source](https://www.mediaobservatory.com/)
+makes us believe we can expect interesting results.
+
 
 
 ## Research questions
