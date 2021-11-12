@@ -37,11 +37,8 @@ aiming at evaluating the opinion they defend.
 ## Methods:
 ##### Metrics considered, and an overview on how to implement them:
 * Cluster according to the people cited (Naive: count them. Less naive:
-  extract the topics each author is most associated with, and use their occurrences
-  to find the orientation of the media).
-* Cluster according to the topics treated (e.g. extract meaning from articles,
-  or simply extract the "meaningful" words used).
-
+  extract the topics each author is most associated with, and use their occurrences to find the orientation of the media).
+* Cluster according to the topics treated (e.g. extract meaning from articles, or simply extract the "meaningful" words used).
 
 To cluster media by people cited, we can not simply count the number of occurrences
 of each speaker. We have to compare the number of citations of one person in the
@@ -53,7 +50,6 @@ journals in which they appear. We then use [TF-IDF](https://en.wikipedia.org/wik
 To extract a topic associated to, for example, articles, we use [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexation*), which is also based on TF-IDF.
 
 ##### Notebook organization: the most important files.
-  **TODO:  Confirm notebook organization.**
 
   | File name                                    |Its use                                   |
   |:-------------------------------------------- |:----------------------------------------:|
@@ -65,11 +61,11 @@ To extract a topic associated to, for example, articles, we use [LSI](https://en
   |Preprocess_speakers.ipynb                     | Speakers preprocessing: see file for more details |
   |Quotes_2020_loading.ipynb                     | Quotes loading: see file for more details |
 
-
-
-## Proposed timeline **TODO: check points 1 and 2**
-* **25-nov-2021:** Data processing finished (i.e. decide on which data to drop, and implement remote processing if it is still too big for local algorithms (e.g. AWS))
-* **10-dec-2021:** Finish data analysis (i.e. **TODO ~all algorithms we were interested in have been run**)
+## Proposed timeline
+* **17-nov-2021:** Media grouped by consortia.
+* **25-nov-2021:** Newspaper selection finished (i.e. decide on which to drop, and implement remote processing if it is still too big for local algorithms (e.g. AWS))
+* **30-nov-2021:** Pipelines for different metrics implemented
+* **10-dec-2021:** Finish data analysis.
 * **12-dec-2021:** Finish code cleaning and documentation.
 * **15-dec-2021:** Finish writing up data story (+visualization).
 * **16-dec-2021:** Website is up and running, with the data story on it.
@@ -77,7 +73,7 @@ To extract a topic associated to, for example, articles, we use [LSI](https://en
 
 ## Organization within the team, to be refined individually at a later date. **TODO: more precise for A&J at least**
 * Antoine & Jonas
-  * data processing/pipelining/filtering
+  * data processing, pipelining and filtering
   * ML algos
 * Hugo & Marin
   * Data extraction / scraping (wikidata)
@@ -85,4 +81,4 @@ To extract a topic associated to, for example, articles, we use [LSI](https://en
   * Data story?
   * Visualization
 
-### Questions for TAs **TODO: any questions? Might make us seem better to have some**
+## Questions for TAs **TODO: any questions left?*
