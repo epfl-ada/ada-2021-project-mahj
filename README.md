@@ -1,6 +1,6 @@
 ## Title: The dictatorship of consortia on their owned media.
 
-**TODO: add that:** https://newsteller.io/source
+**TODO: add that:**
 
 ## Abstract
 One's view of the world is based on the information we have on it, and how it is conveyed.
@@ -21,10 +21,11 @@ are roughly the same for media belonging to the same entity.[^2]
 [^2]: https://www.youtube.com/watch?v=_fHfgU8oMSo
 
 To answer that question, we will try to cluster journals according to different metrics
-aiming at evaluating the opinion they defend. This [source](https://www.mediaobservatory.com/)
-makes us believe we can expect interesting results.
+aiming at evaluating the opinion they defend. Other people have already obtained
+similar results[^3] [^4] based on twitter which makes us also expect to get interesting results.
 
-
+[^3]: https://www.mediaobservatory.com/
+[^4]: https://newsteller.io/source
 
 ## Research questions
 * Does the clustering of media enable us to detect the groups owning them?
