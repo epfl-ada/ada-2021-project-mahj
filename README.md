@@ -27,9 +27,11 @@ aiming at evaluating the opinion they defend.
 
 
 ## Research questions
-* Does the clustering of media enable us to detect the groups owning them?
-* What are the best metrics to identify the group they belong to?
-* Does the membership of a media to a consortium influence the choice of their speaker?
+- Is the influence of media ownership groups visible in quotes shared by newspapers?
+- Does the clustering of media based on quotebank enable us to detect the groups owning them?
+- What are the best metrics to identify the group they belong to?  
+  * Based on the speakers: Does the membership of a media to a consortium influence the choice / importance of their speakers?  
+  * Based on the quotes: Does the membership of a media to a consortium influence the choice / importance of topics or use of a specific term?
 
 
 
@@ -82,8 +84,9 @@ To extract a topic associated to, for example, articles, we use [LSI](https://en
 
 ## Organization within the team, to be refined individually at a later date. **TODO: more precise for A&J at least**
 * Antoine & Jonas
-  * data processing, pipelining and filtering
-  * ML algos
+  * Quotes and speakers preprocessing
+  * Creation of TF-IDF matrices 
+  * Implementation of different pipeline to cluster newspaper
 * Hugo & Marin
   * Data extraction / scraping (wikidata)
   * Code documentation
