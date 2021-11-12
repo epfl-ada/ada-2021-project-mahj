@@ -70,8 +70,9 @@ our case, because small sets (e.g. small media) cannot be similar to big sets.
 * **TODO: explain LSI.** [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexation*)
 which we will apply on the words to extract the most interesting "topics"
 
-[^5]: PCA is optional, but can be visually clearer (for dimensions <= 3 at least),
- and can reduce the variance for the clustering algorithms.
+[^5]: PCA reduces the computational complexity of further algorithms (e.g. k-means),
+and for dimensions <= 3 can be used to visualize clusters.
+
 [^6]: https://medium.com/ai-for-real/relationship-between-cosine-similarity-and-euclidean-distance-7e283a277dff
 
 ##### Notebook organization: the most important files.
