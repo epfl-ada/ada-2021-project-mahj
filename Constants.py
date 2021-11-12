@@ -1,8 +1,9 @@
 DATA_FOLDER = "data/"
 PROCESSED_DATA_FOLDER = "processed_data/"
 
-FILE_QUOTES = DATA_FOLDER + 'quotes-2020.json.bz2'
+FILE_QUOTES = DATA_FOLDER + 'quotes-2020.json.bz2' 
 FILE_NEWSPAPER_TOKEN = PROCESSED_DATA_FOLDER + "nps-tokens-2020.csv.bz2"
+FILE_SPEAKER_NEWSPAPER = PROCESSED_DATA_FOLDER + "speaker-newspaper-2020.csv.bz2"
 FILE_NEWSPAPER_SPEAKER = PROCESSED_DATA_FOLDER + "newspaper-speaker-2020.csv.bz2"
 FILE_NEWSPAPER_SPEAKER_COUNT = PROCESSED_DATA_FOLDER + "newspaper-speaker-2020-count.csv.bz2"
 
