@@ -60,24 +60,20 @@ results, i.e. the clearest clustering. The methods we have selected are:
 * Use [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
 (*term frequency-inverse document frequency*) on the sets of words, or on speakers
 having spoken for a specific media, in order to give a bigger
-weight to more "significant" words or people.
-
-* Then either use PCA[^5] to project these vectors in a smaller subspace along the axis with the larger variance.  
+weight to more "significant" words or people.   
+Then either use PCA[^5] to project these vectors in a smaller subspace along the axis with the larger variance.  
 Or [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexation*)
-which, applied on term-newspaper TF-IDF matrix, extracts the main topics. We thus obtain smaller dimension features representing the importance of a topic for a newspaper. This can be similary applied on the TF-IDF matrix of the speakers.
-
-Finally run k-means (with euclidean distance[^6]) on the resulting vectors.
+which, applied on term-newspaper TF-IDF matrix, extracts the main topics. We thus obtain smaller dimension features representing the importance of a topic for a newspaper. This can be similary applied on the TF-IDF matrix of the speakers.  
+Finally run k-means (with euclidean distance) on the resulting vectors.
 
 * For each media, remember the set of citees, the distance measure is be
-the Jaccard similarity on these sets. We then run PCA[^5], and finally some clustering
-algorithm, e.g. DBSCAN on the media. Note that Jaccard similarity may be problematic in
+the Jaccard similarity on these sets. We then run some clustering algorithms
+using jaccard algorithm, e.g. DBSCAN on the media. Note that Jaccard similarity may be problematic in
 our case, because small sets (e.g. small media) cannot be similar to big sets.
-* **TODO: explain LSI.**
 
 [^5]: PCA reduces the computational complexity of further algorithms (e.g. k-means),
 and for dimensions <= 3 can be used to visualize clusters.
 
-[^6]: https://medium.com/ai-for-real/relationship-between-cosine-similarity-and-euclidean-distance-7e283a277dff
 
 ##### Notebook organization: the most important files.
 
