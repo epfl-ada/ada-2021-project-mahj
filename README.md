@@ -1,10 +1,17 @@
 ## Title: The dictatorship of consortia on their owned media.
 
+(https://www.allsides.com/media-bias/media-bias-ratings
+  https://newsteller.io/source
+  https://www.mediaobservatory.com
+ https://www.youtube.com/watch?v=_fHfgU8oMSo)
+
 ## Abstract
-One's view of the world is based on the information we have on it, and how it is conveyed.
+One's view of the world is based on the information we have on it[^1], and how it is conveyed.
 A big part of that information we obtain from the media, and in particular "traditional media"
 namely newspapers such as *The New York Times* or *Fox News*.
 As a result, the media have a huge impact on the public’s opinion.
+
+[^1]: Test footnote.
 
 One way to ensure you are well-informed (i.e. you are getting information on various topics) and are
 not biased towards a particular stance is to gather knowledge from several sources,
