@@ -1,7 +1,5 @@
 ## Title: The dictatorship of consortia on their owned media.
 
-**TODO: add that:**
-
 ## Abstract
 One's view of the world is based on the information we have on it, and how it is conveyed.
 A big part of that information we obtain from the media, and in particular "traditional media"
@@ -32,7 +30,8 @@ similar results[^3] [^4] based on twitter which makes us also expect to get inte
 - Does the clustering of media based on quotebank enable us to detect the groups owning them?
 - What are the best metrics to identify the group they belong to?  
   * Based on the speakers: Does the membership of a media to a consortium influence the choice / importance of their speakers?  
-  * Based on the quotes: Does the membership of a media to a consortium influence the choice / importance of topics or use of a specific term?
+  * Based on the quotes: Does the membership of a media to a consortium influence
+   the choice / importance of the topics treated or the use of a specific term?
 
 
 
