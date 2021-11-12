@@ -44,7 +44,11 @@ similar results[^3] [^4] based on twitter which makes us also expect to get inte
   To do that we will first have to either reparse the newspapers names  --which are for now
   all lower-case, all-attached-- to use them as input for the API, or to input them as-is
   in the wikidata search box, which seems to usually find the expected result.
-
+  
+  We have the "Pywikibot" notebook that proves we can link the name of the website we found in
+  the quote dataset to its corresponding wikidata qid. For instance linking "nytimes.com" to its qid
+  "Q9684" which references "The New York Times" in wikidata.
+  
 ## Methods:
 
 ##### Features and algorithms to be used:
