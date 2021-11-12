@@ -13,6 +13,7 @@ As a result, the media have a huge impact on the public’s opinion.
 
 [^1]: Test footnote.
 
+
 One way to ensure you are well-informed (i.e. you are getting information on various topics) and are
 not biased towards a particular stance is to gather knowledge from several sources,
 e.g. several media.
@@ -23,6 +24,7 @@ are roughly the same for media belonging to the same entity.
 
 To answer that question, we will cluster journals according to different metrics
 aiming at evaluating the opinion they defend.
+
 
 ## Research questions
 * Does the clustering of media enable us to detect the groups owning them?
