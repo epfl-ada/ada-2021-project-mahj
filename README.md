@@ -71,15 +71,23 @@ which factors will be most useful in clustering the media, namely the speakers
 quoted by this media, and the words **TODO: "in the quotes", or "in the articles
 from which the quotes come"?**
 
-We will then use different similarity metrics to measure the distance between
-media, and select the one giving us the best results when used in the k-means
-algorithm for clustering. The methods we have selected are:
-**TODO**
+We can then use different algorithms and similarity metrics to measure the distance
+between media. We will try several and choose the one giving the best
+results, i.e. the clearest clustering. The methods we have selected are:
+* Use [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
+(*term frequency-inverse document frequency*) on the sets of words, or on the
+number of speakers having spoken for a specific media, in order to give a bigger
+weight to more "significant" words or people. Then use PCA[^5] with cosine similarity
+as a distance metric to project these vectors in a smaller subspace, and finally run
+k-means (with cosine similarity) on the resulting vectors.
+* For each media, remember the set of citees, the distance measure is be
+the Jaccard similarity on these sets. We then run PCA[^5], then k-means on these media.
+**TODO: explain LSI.**
 * [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexation*)
 which we will apply on the words to extract the most interesting "topics"
-* PCA
-* Jaccard
 
+[^5]: PCA is optional, but can be visually clearer (for dimensions <= 3 at least),
+ and will reduce variance for the k-means algorithm.
 
 We will in our analysis only focus on a few carefully selected ones,
 based either on their complexity or an a ()
