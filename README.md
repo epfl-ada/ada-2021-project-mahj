@@ -5,7 +5,7 @@
 ## Abstract
 One's view of the world is based on the information we have on it, and how it is conveyed.
 A big part of that information we obtain from the media, and in particular "traditional media"
-namely newspapers such as *The New York Times* or *Fox News*.
+namely newspapers such as *The Guardian* or *Fox News*.
 As a result, the media have a huge impact on the public’s opinion.
 
 One way to ensure you are well-informed (i.e. you are getting information on various topics) and are
@@ -48,21 +48,6 @@ similar results[^3] [^4] based on twitter which makes us also expect to get inte
 
 ## Methods:
 
-> ignore quoted text. Only here to be saved for now.
-> ##### Metrics considered, and an overview on how to implement them:
-* Cluster according to the people cited (Naive: count them. Less naive:
-  extract the topics each author is most associated with, and use their occurrences to find the orientation of the media).
-* Cluster according to the topics treated (e.g. extract meaning from articles, or simply extract the "meaningful" words used).
-
-  >To cluster media by people cited, we can not simply count the number of occurrences
-  of each speaker. We have to compare the number of citations of one person in the
-  journal with the number of citations of this person in the corpus in general.
-  To accomplish this, we extract all the citees, then group them by the
-  journals in which they appear. We then use [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
-  (*term frequency-inverse document frequency*) to separate the different media.
-
-> To extract a topic associated to, for example, articles, we use [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexation*), which is also based on TF-IDF.
-
 ##### Features and algorithms to be used:
 There are numerous features and similarity metrics to be chosen from.  
 
@@ -81,16 +66,13 @@ weight to more "significant" words or people. Then use PCA[^5] with cosine simil
 as a distance metric to project these vectors in a smaller subspace, and finally run
 k-means (with cosine similarity) on the resulting vectors.
 * For each media, remember the set of citees, the distance measure is be
-the Jaccard similarity on these sets. We then run PCA[^5], then k-means on these media.
-**TODO: explain LSI.**
-* [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexation*)
+the Jaccard similarity on these sets. We then run PCA[^5], and finally k-means
+on these media.
+* **TODO: explain LSI.** [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexation*)
 which we will apply on the words to extract the most interesting "topics"
 
 [^5]: PCA is optional, but can be visually clearer (for dimensions <= 3 at least),
  and will reduce variance for the k-means algorithm.
-
-We will in our analysis only focus on a few carefully selected ones,
-based either on their complexity or an a ()
 
 ##### Notebook organization: the most important files.
 
