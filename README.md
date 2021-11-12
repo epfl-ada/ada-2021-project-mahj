@@ -62,7 +62,7 @@ results, i.e. the clearest clustering. The methods we have selected are:
 having spoken for a specific media, in order to give a bigger
 weight to more "significant" words or people.   
 Then either use PCA[^5] to project these vectors in a smaller subspace along the axis with the larger variance.  
-Or [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexation*)
+Or [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexing*)
 which, applied on term-newspaper TF-IDF matrix, extracts the main topics. We thus obtain smaller dimension features representing the importance of a topic for a newspaper. This can be similary applied on the TF-IDF matrix of the speakers.  
 Finally run k-means (with euclidean distance) on the resulting vectors. For the choice of k
 we can start from the number of consortia, then decrease k from there. The reasoning
