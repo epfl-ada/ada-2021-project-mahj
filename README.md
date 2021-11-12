@@ -60,19 +60,21 @@ We can then use different algorithms and similarity metrics to measure the dista
 between media. We will try several and choose the one giving the best
 results, i.e. the clearest clustering. The methods we have selected are:
 * Use [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
-(*term frequency-inverse document frequency*) on the sets of words, or on the
-number of speakers having spoken for a specific media, in order to give a bigger
+(*term frequency-inverse document frequency*) on the sets of words, or on speakers
+having spoken for a specific media, in order to give a bigger
 weight to more "significant" words or people. Then use PCA[^5] with cosine similarity
 as a distance metric to project these vectors in a smaller subspace, and finally run
-k-means (with cosine similarity) on the resulting vectors.
+k-means (with euclidean distance[^6]) on the resulting vectors.
 * For each media, remember the set of citees, the distance measure is be
-the Jaccard similarity on these sets. We then run PCA[^5], and finally k-means
-on these media.
+the Jaccard similarity on these sets. We then run PCA[^5], and finally some clustering
+algorithm, e.g. DBSCAN on the media. Note that Jaccard similarity may be problematic in
+our case, because small sets (e.g. small media) cannot be similar to big sets.
 * **TODO: explain LSI.** [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexation*)
 which we will apply on the words to extract the most interesting "topics"
 
 [^5]: PCA is optional, but can be visually clearer (for dimensions <= 3 at least),
  and will reduce variance for the k-means algorithm.
+[^6]: https://medium.com/ai-for-real/relationship-between-cosine-similarity-and-euclidean-distance-7e283a277dff
 
 ##### Notebook organization: the most important files.
 
