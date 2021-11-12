@@ -21,7 +21,7 @@ are roughly the same for media belonging to the same entity.[^2]
 [^2]: https://www.youtube.com/watch?v=_fHfgU8oMSo
 
 To answer that question, we will try to cluster journals according to different metrics
-aiming at evaluating the opinion they defend. Other people have already obtained
+aiming at evaluating the opinion they defend. Other scientists have already obtained
 similar results[^3] [^4] based on twitter which makes us also expect to get interesting results.
 
 [^3]: https://www.mediaobservatory.com/
@@ -47,19 +47,42 @@ similar results[^3] [^4] based on twitter which makes us also expect to get inte
   in the wikidata search box, which seems to usually find the expected result.
 
 ## Methods:
-##### Metrics considered, and an overview on how to implement them:
+
+> ignore quoted text. Only here to be saved for now.
+> ##### Metrics considered, and an overview on how to implement them:
 * Cluster according to the people cited (Naive: count them. Less naive:
   extract the topics each author is most associated with, and use their occurrences to find the orientation of the media).
 * Cluster according to the topics treated (e.g. extract meaning from articles, or simply extract the "meaningful" words used).
 
-To cluster media by people cited, we can not simply count the number of occurrences
-of each speaker. We have to compare the number of citations of one person in the
-journal with the number of citations of this person in the corpus in general.
-To accomplish this, we extract all the citees, then group them by the
-journals in which they appear. We then use [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
-(*term frequency-inverse document frequency*) to separate the different media.
+  >To cluster media by people cited, we can not simply count the number of occurrences
+  of each speaker. We have to compare the number of citations of one person in the
+  journal with the number of citations of this person in the corpus in general.
+  To accomplish this, we extract all the citees, then group them by the
+  journals in which they appear. We then use [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
+  (*term frequency-inverse document frequency*) to separate the different media.
 
-To extract a topic associated to, for example, articles, we use [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexation*), which is also based on TF-IDF.
+> To extract a topic associated to, for example, articles, we use [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexation*), which is also based on TF-IDF.
+
+##### Features and algorithms to be used:
+There are numerous features and similarity metrics to be chosen from.  
+
+The features we study are based on our a priori analysis of
+which factors will be most useful in clustering the media, namely the speakers
+quoted by this media, and the words **TODO: "in the quotes", or "in the articles
+from which the quotes come"?**
+
+We will then use different similarity metrics to measure the distance between
+media, and select the one giving us the best results when used in the k-means
+algorithm for clustering. The methods we have selected are:
+**TODO**
+* [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexation*)
+which we will apply on the words to extract the most interesting "topics"
+* PCA
+* Jaccard
+
+
+We will in our analysis only focus on a few carefully selected ones,
+based either on their complexity or an a ()
 
 ##### Notebook organization: the most important files.
 
@@ -86,7 +109,7 @@ To extract a topic associated to, for example, articles, we use [LSI](https://en
 ## Organization within the team, to be refined individually at a later date. **TODO: more precise for A&J at least**
 * Antoine & Jonas
   * Quotes and speakers preprocessing
-  * Creation of TF-IDF matrices 
+  * Creation of TF-IDF matrices
   * Implementation of different pipeline to cluster newspaper
 * Hugo & Marin
   * Data extraction / scraping (wikidata)
