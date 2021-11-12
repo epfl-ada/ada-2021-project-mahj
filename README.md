@@ -71,7 +71,7 @@ our case, because small sets (e.g. small media) cannot be similar to big sets.
 which we will apply on the words to extract the most interesting "topics"
 
 [^5]: PCA is optional, but can be visually clearer (for dimensions <= 3 at least),
- and will reduce variance for the k-means algorithm.
+ and can reduce the variance for the clustering algorithms.
 [^6]: https://medium.com/ai-for-real/relationship-between-cosine-similarity-and-euclidean-distance-7e283a277dff
 
 ##### Notebook organization: the most important files.
@@ -95,7 +95,7 @@ which we will apply on the words to extract the most interesting "topics"
 * **16-dec-2021:** Website is up and running, with the data story on it.
 * **17-dec-2021:** Panic fixes.
 
-## Organization within the team, to be refined individually at a later date. **TODO: more precise for A&J at least**
+## Organization within the team, to be refined individually at a later date.
 * Antoine & Jonas
   * Quotes and speakers preprocessing
   * Creation of TF-IDF matrices
