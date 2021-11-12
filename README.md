@@ -1,6 +1,6 @@
 ## Title: The dictatorship of consortia on their owned media.
 
-## Abstract **TODO: reread, but should be good**
+## Abstract
 One's view of the world is based on the information we have on it, and how it is conveyed.
 A big part of that information we obtain from the media, and in particular "traditional media"
 namely newspapers such as *The New York Times* or *Fox News*.
@@ -27,6 +27,13 @@ aiming at evaluating the opinion they defend.
 ## Proposed additional datasets
   * wikidata
 
+  Use of wikidata: automating the consortium extraction:
+  In wikidata the media considered have an `owned by`
+  attribute, which we can use, potentially recursively, to automate the consortium finding.
+  To do that we will first have to either reparse the newspapers names  --which are for now
+  all lower-case, all-attached-- to use them as input for the API, or to input them as-is
+  in the wikidata search box, which seems to usually find the expected result.
+
 ## Methods:
 ##### Metrics considered, and an overview on how to implement them:
 * Cluster according to the people cited (Naive: count them. Less naive:
@@ -45,13 +52,6 @@ journals in which they appear. We then use [TF-IDF](https://en.wikipedia.org/wik
 
 To extract a topic associated to, for example, articles, we use [LSI](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (*Latent semantic indexation*), which is also based on TF-IDF.
 
-##### Use of wikidata: automating the consortium extraction:
-In wikidata the media considered have an `owned by`
-attribute, which we can use, potentially recursively, to automate the consortium finding.
-To do that we will first have to either reparse the newspapers names  --which are for now
-all lower-case, all-attached-- to use them as input for the API, or to input them as-is
-in the wikidata search box, which seems[^1] to usually find the expected result.
-[^1]: tested by hand on some inputs
 ##### Notebook organization: the most important files.
   **TODO:  Confirm notebook organization.**
 
@@ -68,8 +68,7 @@ in the wikidata search box, which seems[^1] to usually find the expected result.
 
 
 ## Proposed timeline **TODO: add 1 milestone?**
-* **25-nov-2021:** Data processing finished (**TODO: expand on that, or we say its enough?**)
-* **TODO: add intermediate milestone maybe not?**
+* **25-nov-2021:** Data processing finished (i.e. decide on which data to drop, and implement remote processing if it is still too big for local algorithms (e.g. AWS))
 * **10-dec-2021:** Finish data analysis (i.e. **TODO ~all algorithms we were interested in have been run**)
 * **12-dec-2021:** Finish code cleaning and documentation.
 * **15-dec-2021:** Finish writing up data story (+visualization).
