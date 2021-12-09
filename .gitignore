@@ -2,4 +2,7 @@
 *.json
 *.bz2
 *.npz
+*.html
+*.lwp
+processed_data/
 __pycache__/
