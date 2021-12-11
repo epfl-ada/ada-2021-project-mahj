@@ -1,5 +1,6 @@
 DATA_FOLDER = "data/"
 PROCESSED_DATA_FOLDER = "processed_data/"
+PLOT_FOLDER = "plot/"
 
 FILE_QUOTES = DATA_FOLDER + 'quotes-2020.json.bz2'
 FILE_NEWSPAPER_TOKEN = PROCESSED_DATA_FOLDER + "nps-tokens-2020.csv.bz2"
