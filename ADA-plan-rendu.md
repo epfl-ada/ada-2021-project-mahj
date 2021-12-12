@@ -1,5 +1,9 @@
 # Plan rendu
 
+* Dire sur le site un truc du genre: "Pour plus d'infos aller voir le notebook"
+* Pour le README: Faire un plan du notebook.
+
+
 ### Décrire les données au viewer
 * Montrer quelques samples au lecteur pour qu'il comprenne à quoi ressemble
   la data.
@@ -52,7 +56,7 @@ Exemple de *Newsquest (UK)*:
   * certains journaux dans un groupe disent à peu près tjrs la même chose
   * ou ptetre même cetains groupes en copient d'autres?
 
-Ouvrir rapidement vers une suite
+Ouvrir brièvement vers une suite
 
 #### un 6 svp **(⊙_⊙;)**
 
