@@ -56,7 +56,7 @@ Exemple de *Newsquest (UK)*:
   * certains journaux dans un groupe disent à peu près tjrs la même chose
   * ou ptetre même cetains groupes en copient d'autres?
 
-Ouvrir brièvement vers une suite
+Ouvrir rapidement vers une suite
 
 #### un 6 svp **(⊙_⊙;)**
 
