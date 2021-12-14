@@ -2,7 +2,9 @@
 
 * Dire sur le site un truc du genre: "Pour plus d'infos aller voir le notebook"
 * Pour le README: Faire un plan du notebook.
-
+* Mais est-ce que les "topics" qu'on identifie ce ne sont pas les journaux
+eux-mêmes justement? -> normalement pas exactement, though proche:
+un journal devrait être lié à *quelques* topics.
 
 ### Décrire les données au viewer
 * Montrer quelques samples au lecteur pour qu'il comprenne à quoi ressemble
