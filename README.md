@@ -114,7 +114,6 @@ and for dimensions <= 3 can be used to visualize clusters.
   * Implementation of different pipeline to cluster newspaper
   * Visualization
 * Hugo & Marin
-* Marin
   * Data extraction / scraping (wikidata)
   * Code documentation
   * Data story
