@@ -1,5 +1,9 @@
 # Title: The dictatorship of consortia on their owned media.
 
+**TODO: a link to the notebook**  
+**see [this](https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_chic) if
+you want to see how some updated their README**
+
 ## Abstract
 One's view of the world is based on the information we have on it, and how it is conveyed.
 A big part of that information we obtain from the media, and in particular "traditional media"
@@ -44,11 +48,11 @@ similar results[^3] [^4] based on twitter which makes us also expect to get inte
   To do that we will first have to either reparse the newspapers names  --which are for now
   all lower-case, all-attached-- to use them as input for the API, or to input them as-is
   in the wikidata search box, which seems to usually find the expected result.
-  
+
   We have the "Pywikibot" notebook that proves we can link the name of the website we found in
   the quote dataset to its corresponding wikidata qid. For instance linking "nytimes.com" to its qid
   "Q9684" which references "The New York Times" in wikidata.
-  
+
 ## Methods:
 
 ##### Features and algorithms to be used:
@@ -82,16 +86,16 @@ our case, because small sets (e.g. small media) cannot be similar to big sets.
 and for dimensions <= 3 can be used to visualize clusters.
 
 
-##### Notebook organization: the most important files.
+##### Notebook organization:
 
-  | File name                                    |Its use                                   |
-  |:-------------------------------------------- |:----------------------------------------:|
-  |Create newspaper - speaker TF-IDF matrix.ipynb| Creates the aforementioned TF-IDF matrix |
-  |Create newspaper - token TF-IDF matrix.ipynb  | Creates the aforementioned TF-IDF matrix |
-  |Helper.py                                     | Extract newspapers name from URL         |
-  |Newspaper_speaker_statistics.ipynb            | Some statistics and analysis on the speakers |
-  |Preprocess_quotes.ipynb                       | Quote preprocessing, e.g. tokenization, formatting and lemmatization |
-  |Preprocess_speakers.ipynb                     | Speakers preprocessing: see file for more details |
+| File name                                    |Its use                                   |
+|:-------------------------------------------- |:----------------------------------------:|
+|Constant.py                  | |
+|\[folder\] processed_data | The data we have processed|
+|Process_data.ipynb | |
+|Wikidata_scraping.ipynb|         |
+|Analysis.ipynb          |  |
+|README.md                 | |
 
 ## Proposed timeline
 * **17-nov-2021:** Media grouped by consortia.
@@ -108,10 +112,10 @@ and for dimensions <= 3 can be used to visualize clusters.
   * Quotes and speakers preprocessing
   * Creation of TF-IDF matrices
   * Implementation of different pipeline to cluster newspaper
+  * Visualization
 * Hugo & Marin
+* Marin
   * Data extraction / scraping (wikidata)
   * Code documentation
-  * Data story?
+  * Data story
   * Visualization
-
-## Questions for TAs **TODO: any questions left?**
