@@ -8,9 +8,9 @@ you want to see how some updated their README**
 
 | File name                                    |Its purpose                                   |
 |:-------------------------------------------- |:----------------------------------------:|
-|Wikidata_scraping.ipynb| Code used to do the data augmentation, in other words to construct the features we were missing |
-|Process_data.ipynb | The pipeline used to clean, format and transform our data before the analysis |
-|Analysis.ipynb  | The 'main' notebook, containing all the visualization and analysis |
+|[Wikidata_scraping](/Wikidata_scraping.ipynb)| Code used to do the data augmentation, in other words to construct the features we were missing |
+|[Process_data](/Process_data.ipynb) | The pipeline used to clean, format and transform our data before the analysis |
+|[Analysis](/Analysis.ipynb)  | The 'main' notebook, containing all the visualization and analysis |
 
 
 ## Abstract
