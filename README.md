@@ -4,6 +4,15 @@
 **see [this](https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_chic) if
 you want to see how some updated their README**
 
+## Notebook important files:
+
+| File name                                    |Its purpose                                   |
+|:-------------------------------------------- |:----------------------------------------:|
+|Wikidata_scraping.ipynb| Code used to do the data augmentation, in other words to construct the features we were missing |
+|Process_data.ipynb | The pipeline used to clean, format and transform our data before the anlysis |
+|Analysis.ipynb  | The final notebook, containing all the visualization and analysis |
+
+
 ## Abstract
 One's view of the world is based on the information we have on it, and how it is conveyed.
 A big part of that information we obtain from the media, and in particular "traditional media"
@@ -29,7 +38,7 @@ similar results[^3] [^4] based on twitter which makes us also expect to get inte
 [^3]: https://www.mediaobservatory.com/
 [^4]: https://newsteller.io/source
 
-## Research questions
+## \[old\] Research questions
 - Is the influence of media ownership groups visible in quotes shared by newspapers?
 - Does the clustering of media based on quotebank enable us to detect the groups owning them?
 - What are the best metrics to identify the group they belong to?  
@@ -37,9 +46,7 @@ similar results[^3] [^4] based on twitter which makes us also expect to get inte
   * Based on the quotes: Does the membership of a media to a consortium influence
    the choice / importance of the topics treated or the use of a specific term?
 
-
-
-## Proposed additional datasets
+## Additional datasets
   * wikidata
 
   Use of wikidata: automating the consortium extraction:
@@ -53,7 +60,7 @@ similar results[^3] [^4] based on twitter which makes us also expect to get inte
   the quote dataset to its corresponding wikidata qid. For instance linking "nytimes.com" to its qid
   "Q9684" which references "The New York Times" in wikidata.
 
-## Methods:
+## \[old\] Methods:
 
 ##### Features and algorithms to be used:
 There are numerous features and similarity metrics to be chosen from.  
@@ -85,29 +92,7 @@ our case, because small sets (e.g. small media) cannot be similar to big sets.
 [^5]: PCA reduces the computational complexity of further algorithms (e.g. k-means),
 and for dimensions <= 3 can be used to visualize clusters.
 
-
-##### Notebook organization:
-
-| File name                                    |Its use                                   |
-|:-------------------------------------------- |:----------------------------------------:|
-|Constant.py                  | |
-|\[folder\] processed_data | The data we have processed|
-|Process_data.ipynb | |
-|Wikidata_scraping.ipynb|         |
-|Analysis.ipynb          |  |
-|README.md                 | |
-
-## Proposed timeline
-* **17-nov-2021:** Media grouped by consortia.
-* **25-nov-2021:** Newspaper selection finished (i.e. decide on which to drop, and implement remote processing if it is still too big for local algorithms (e.g. AWS))
-* **30-nov-2021:** Pipelines for different metrics implemented
-* **10-dec-2021:** Finish data analysis.
-* **12-dec-2021:** Finish code cleaning and documentation.
-* **15-dec-2021:** Finish writing up data story (+visualization).
-* **16-dec-2021:** Website is up and running, with the data story on it.
-* **17-dec-2021:** Panic fixes.
-
-## Organization within the team, to be refined individually at a later date.
+## Organization within the team.
 * Antoine & Jonas
   * Quotes and speakers preprocessing
   * Creation of TF-IDF matrices
@@ -117,4 +102,5 @@ and for dimensions <= 3 can be used to visualize clusters.
   * Data extraction / scraping (wikidata)
   * Code documentation
   * Data story
+  * Website
   * Visualization
