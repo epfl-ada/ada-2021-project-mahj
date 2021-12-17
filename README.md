@@ -1,6 +1,7 @@
 # The dictatorship of consortia on the media they own.
 
-**[Webpage](https://hugolan.github.io/The-dictatorship-of-consortia-on-the-media-they-own/)**
+Find our webpage at ~~https://hugolan.github.io/The-dictatorship-of-consortia-on-the-media-they-own/~~  
+https://csb-yue4k.netlify.app
 
 ## Notebook important files:
 
