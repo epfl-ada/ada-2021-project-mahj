@@ -1,8 +1,6 @@
 # The dictatorship of consortia on the media they own.
 
-**TODO: a link to the notebook**  
-**see [this](https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_chic) if
-you want to see how some updated their README**
+**[Webpage](https://hugolan.github.io/The-dictatorship-of-consortia-on-the-media-they-own/)**
 
 ## Notebook important files:
 
