@@ -95,12 +95,12 @@ and for dimensions <= 3 can be used to visualize clusters.
 ## Organization within the team.
 * Antoine & Jonas
   * Quotes and speakers preprocessing
-  * Creation of TF-IDF matrices
-  * Implementation of different pipeline to cluster newspaper
-  * Visualization
+  * Implementation of processing pipeline
+  * Coding the Analysis
+  * Visualization (bokeh plot)
+  * Tabulation of final results
 * Hugo & Marin
   * Data extraction / scraping (wikidata)
   * Code documentation
-  * Data story
-  * Website
-  * Visualization
+  * Data story / problem formulation
+  * Website layout, implementation.
