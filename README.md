@@ -1,4 +1,4 @@
-# Title: The dictatorship of consortia on the media they own.
+# The dictatorship of consortia on the media they own.
 
 **TODO: a link to the notebook**  
 **see [this](https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_chic) if
@@ -83,11 +83,6 @@ Finally run k-means (with euclidean distance) on the resulting vectors. For the 
 we can start from the number of consortia, then decrease k from there. The reasoning
 is that there cannot be more than k clusters given our criteria, but there can still
 be some overlap between different consortia.
-
-* For each media, remember the set of citees, the distance measure is be
-the Jaccard similarity on these sets. We then run some clustering algorithms
-using jaccard algorithm, e.g. DBSCAN on the media. Note that Jaccard similarity may be problematic in
-our case, because small sets (e.g. small media) cannot be similar to big sets.
 
 [^5]: PCA reduces the computational complexity of further algorithms (e.g. k-means),
 and for dimensions <= 3 can be used to visualize clusters.
