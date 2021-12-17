@@ -1,4 +1,4 @@
-# Title: The dictatorship of consortia on their owned media.
+# Title: The dictatorship of consortia on the media they own.
 
 **TODO: a link to the notebook**  
 **see [this](https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_chic) if
@@ -9,7 +9,7 @@ you want to see how some updated their README**
 | File name                                    |Its purpose                                   |
 |:-------------------------------------------- |:----------------------------------------:|
 |Wikidata_scraping.ipynb| Code used to do the data augmentation, in other words to construct the features we were missing |
-|Process_data.ipynb | The pipeline used to clean, format and transform our data before the anlysis |
+|Process_data.ipynb | The pipeline used to clean, format and transform our data before the analysis |
 |Analysis.ipynb  | The final notebook, containing all the visualization and analysis |
 
 
